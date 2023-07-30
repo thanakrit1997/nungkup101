@@ -41,8 +41,8 @@ jobs:
 
       - name: git config
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "thanakrit1997nil@gmail.com"
+          git config --local user.name "thanakrit1997"
 
       - name: mike deploy main
         if: contains(github.ref, 'refs/heads/main')
