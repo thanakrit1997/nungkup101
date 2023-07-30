@@ -26,11 +26,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Python ${{ env.PYTHON_VERSION }}
+      - name: Set up Python 3.11.4
         uses: actions/setup-python@v3
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-
+          python-version: 3.11.4
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
